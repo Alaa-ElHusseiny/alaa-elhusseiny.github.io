@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alaa Elhussein Abdelaal – Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F4F7;--card:#FFFFFF;--ink:#0F2233;--mute:#5A6B7B;--line:#CBD5DF;--amber:#D98E00;--blue:#1F5FBF;--green:#16945F;
+--h:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;--b:'IBM Plex Sans','Segoe UI',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1826;--card:#13273A;--ink:#EAF1F8;--mute:#9DB0C2;--line:#27415A;--amber:#FFB52E;--blue:#6FA8FF;--green:#3DDC97}}
+:root[data-theme="dark"]{--bg:#0C1826;--card:#13273A;--ink:#EAF1F8;--mute:#9DB0C2;--line:#27415A;--amber:#FFB52E;--blue:#6FA8FF;--green:#3DDC97}
+*{box-sizing:border-box}html{height:100%;scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:18px;align-items:center;height:54px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--mute);font-weight:500;font-size:15px}nav a:hover{color:var(--ink)}
+nav b{font:800 18px var(--h);color:var(--ink);margin-right:auto}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:20px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}
+.hero{position:relative;min-height:84vh;display:flex;align-items:center;border-bottom:1px solid var(--line);overflow:hidden}
+#field{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;pointer-events:none}
+.hero .wrap *{pointer-events:auto}
+h1{font:800 clamp(44px,9vw,104px)/.95 var(--h);letter-spacing:-.03em;margin:0 0 18px}
+.roles{font:500 clamp(20px,3vw,28px)/1.3 var(--h);margin:0 0 10px;min-height:2.7em}
+.roles span{color:var(--blue)}
+.cursor{display:inline-block;width:3px;height:1em;background:var(--amber);vertical-align:-3px;margin-left:3px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{max-width:540px;color:var(--mute);margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;border:1.5px solid var(--ink);text-decoration:none;font-weight:500}
+.btn.p{background:var(--ink);color:var(--bg)}.btn:hover{border-color:var(--amber)}
+.hint{position:absolute;right:22px;bottom:14px;font-size:13px;color:var(--mute);pointer-events:none}
+section{padding:84px 0 20px}
+h2{font:800 clamp(30px,5vw,46px)/1.05 var(--h);letter-spacing:-.02em;margin:0 0 10px}
+.sub{color:var(--mute);margin:0 0 36px;max-width:560px}
+.route{position:relative;padding-left:46px}
+.route:before,.fill{content:"";position:absolute;left:14px;top:8px;width:4px;border-radius:2px}
+.route:before{bottom:8px;background:var(--line)}
+.fill{background:var(--amber);height:0;box-shadow:0 0 12px var(--amber)}
+.stop{position:relative;margin-bottom:18px}
+.dot{position:absolute;left:-40px;top:20px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:4px solid var(--line);transition:.25s}
+.stop.on .dot{border-color:var(--amber);background:var(--amber)}
+.stop>button{all:unset;display:block;box-sizing:border-box;width:100%;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.stop>button:hover{border-color:var(--blue)}.stop>button:focus-visible{outline:3px solid var(--amber)}
+.when{font-size:14px;color:var(--mute)}
+.ttl{font:700 21px/1.25 var(--h);margin:2px 0}
+.org{color:var(--blue);font-weight:500}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s}
+.more>div{overflow:hidden}
+.stop.on .more{grid-template-rows:1fr}
+.more ul{margin:12px 0 0;padding-left:20px}.more li{margin-bottom:6px}
+.tag{display:inline-block;font-size:13px;border:1px solid var(--line);border-radius:20px;padding:1px 10px;margin:8px 6px 0 0;color:var(--mute)}
+.new{background:var(--green);color:#04180F;border-radius:20px;font-size:12px;font-weight:500;padding:1px 9px;margin-left:8px;vertical-align:2px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{font:inherit;font-size:15px;background:none;color:var(--ink);border:1.5px solid var(--line);border-radius:20px;padding:6px 16px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 16px;font-weight:500;transition:transform .15s,opacity .2s}
+.chip.dim{opacity:.18}.chip:hover{transform:translateY(-3px);border-color:var(--amber)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font:700 21px/1.25 var(--h);margin:0 0 6px}
+.card p{margin:8px 0 0;color:var(--mute);font-size:16px}
+.big{font:800 40px/1 var(--h);color:var(--amber)}
+.medal{display:flex;gap:16px;align-items:center}
+footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 0 60px}
+footer .big{color:var(--ink);font-size:clamp(34px,7vw,64px);letter-spacing:-.02em;margin-bottom:22px}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+.links a{border:1.5px solid var(--line);border-radius:8px;padding:9px 16px;text-decoration:none;background:var(--card)}
+.links a:hover{border-color:var(--amber)}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:8px;opacity:0;transition:.3s;z-index:9}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Alaa E.</b><a href="#route">Experience</a><a href="#skills">Skills</a><a href="#builds">Projects</a><a href="#lead">Leadership</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">Theme</button></div></nav>
+
+<header class="hero">
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="wrap">
+<h1>Alaa<br>Elhussein<br>Abdelaal</h1>
+<p class="roles"><span id="role"></span><i class="cursor"></i></p>
+<p class="lead">Electrical engineering graduate from Cairo University. I connect electrical systems, project schedules and data, from high speed rail interfaces to spare parts planning at Huawei.</p>
+<div class="btns"><a class="btn p" href="#route">See my route</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="hint">Move your cursor: the field follows it</div>
+</header>
+
+<main class="wrap">
+<section id="route">
+<h2>My route so far</h2>
+<p class="sub">Select a stop to open it. The line lights up as you scroll.</p>
+<div class="route" id="routeBox"><div class="fill" id="fill"></div></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<p class="sub">Filter by type.</p>
+<div class="tabs" id="tabs"></div>
+<div class="chips" id="chips"></div>
+</section>
+
+<section id="builds">
+<h2>Things I built</h2>
+<p class="sub">Two remote controlled machines, both built from scratch with Arduino.</p>
+<div class="grid">
+<div class="card"><h3>3D remote controlled hovercraft</h3><div class="when">March to May 2024 · ASME IAM 3D competition</div>
+<p>Printed the body with additive manufacturing. Wired an Arduino UNO, two nRF24L01 radio modules, electronic speed controllers, two brushless motors and servo motors.</p>
+<div class="medal" style="margin-top:14px"><span class="big">2nd</span><span>place, plus a $300 prize from the American University in Cairo</span></div></div>
+<div class="card"><h3>Green Energy Sprint car</h3><div class="when">March to May 2023 · ASME AUC competition</div>
+<p>Team of 5. A remote controlled car powered fully by solar and wind energy. I designed the charging circuit (relay, solar panel, wind turbine, nRF24L01) and wrote the Arduino code in C++.</p>
+<div class="medal" style="margin-top:14px"><span class="big">4th</span><span>place on 4 May 2023</span></div></div>
+</div>
+</section>
+
+<section id="lead">
+<h2>Leadership and awards</h2>
+<p class="sub">Entrepreneurship, marketing and a 90 second pitch.</p>
+<div class="grid">
+<div class="card"><h3>ECO-H2O, founder</h3><div class="when">AUC Center for Entrepreneurship and Innovation · 2021 to present</div><p>Founded with 8 USAID scholars. An eco-friendly bottle made of bio-plastic that is 95 percent biodegradable. The venture received a 50K fund from AUC.</p></div>
+<div class="card"><h3>COMET, entrepreneurship delegate</h3><div class="when">March 2021 to March 2022</div><p>Co-founded a project connecting large factories to recycling. Wrote a business plan for known companies such as Rabbit as our graduation project.</p></div>
+<div class="card"><h3>TEDx Shorouk Academy, marketing</h3><div class="when">Feb to Dec 2020</div><p>Built the marketing plan for the event and grew the Facebook page reach by 20 percent through content marketing.</p></div>
+<div class="card"><div class="big">3rd</div><h3>Elevator Pitch competition</h3><div class="when">American University in Cairo · 4 May 2023</div><p>Presented a CO2 footprint solution in 90 seconds and won a $75 prize.</p></div>
+</div>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div class="big">Let's talk.</div>
+<div class="links">
+<a href="mailto:alaa.mahmoud1743@gmail.com" data-copy="alaa.mahmoud1743@gmail.com">alaa.mahmoud1743@gmail.com</a>
+<a href="tel:+201062438821" data-copy="+201062438821">+20 106 243 8821</a>
+<a href="https://www.linkedin.com/in/alaa-el-husseiny-b4b710197" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/Alaa-ElHusseiny" target="_blank" rel="noopener">GitHub</a>
+</div>
+<p class="sub" style="margin-top:22px">Click email or phone to copy. Based in Egypt.</p>
+</div></footer>
+<div id="toast" role="status"></div>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// Typing roles
+const roles=['Planning Engineer','Electrical Interface Owner','Data-minded problem solver'];
+const rEl=document.getElementById('role');let ri=0,ci=0,del=false;
+function type(){const w=roles[ri];
+ if(reduce){rEl.textContent=roles.slice(0,2).join(' and ');return}
+ rEl.textContent=w.slice(0,ci);
+ if(!del&&ci<w.length){ci++;setTimeout(type,70)}
+ else if(!del){del=true;setTimeout(type,1400)}
+ else if(ci>0){ci--;setTimeout(type,35)}
+ else{del=false;ri=(ri+1)%roles.length;setTimeout(type,250)}}
+type();
+
+// Magnetic field canvas
+const cv=document.getElementById('field'),cx=cv.getContext('2d');
+let W,H,mx=null,my=null,t=0;
+function size(){const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
+addEventListener('resize',size);size();
+cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+cv.parentElement.addEventListener('pointerleave',()=>{mx=null});
+function draw(){
+ const cs=getComputedStyle(document.documentElement),line=cs.getPropertyValue('--line').trim(),amb=cs.getPropertyValue('--amber').trim();
+ cx.clearRect(0,0,W,H);cx.lineCap='round';cx.lineWidth=2;const g=36;
+ for(let x=g/2;x<W;x+=g)for(let y=g/2;y<H;y+=g){
+  let a=Math.sin(x*.01+t)+Math.cos(y*.012+t*.8),near=0;
+  if(mx!==null){const dx=mx-x,dy=my-y,d=Math.hypot(dx,dy);a=Math.atan2(dy,dx);near=Math.max(0,1-d/220)}
+  const len=8+near*12;
+  cx.strokeStyle=near>0.02?amb:line;cx.globalAlpha=near>0.02?.45+near*.55:.8;
+  cx.beginPath();cx.moveTo(x-Math.cos(a)*len/2,y-Math.sin(a)*len/2);cx.lineTo(x+Math.cos(a)*len/2,y+Math.sin(a)*len/2);cx.stroke()}
+ cx.globalAlpha=1;t+=.008;if(!reduce)requestAnimationFrame(draw)}
+draw();
+
+// Route
+const stops=[
+ {when:'July 2026 to present',t:'Planning Engineer and Customer Service Engineer',o:'Huawei · Spare Parts Department',now:1,
+  b:['Plan spare parts and warehouse operations while supporting customers as a customer service engineer.','Analyze spare parts and warehouse data to find inventory trends, discrepancies and operational patterns.','Organize, validate and maintain datasets so reporting stays accurate and decisions are data-driven.','Turn inventory data into insights that support warehouse operations and spare parts management.'],tags:['Planning','Customer service','Inventory data','Reporting']},
+ {when:'Sep 2024 to June 2026',t:'Electrical Working Student, Interface Owner',o:'High Speed Rail Project · Siemens Mobility',
+  b:['Owned Electrical Interface Control Forms (ICFs) for Earthing Bonding and low voltage supply to technical rooms, covering civil structure and rail systems integration.','Worked across Package 01 (National Authority of Tunnels) and Package 02 (Siemens, Orascom and Arab Contractors).','Managed interface parameters: electrical category, line relevance and closure evidence such as test, inspection and installation.','Agreed scope splits across design, procurement, construction and testing and commissioning with the Employer (EMP) and Civil Works (CJV).'],tags:['Earthing Bonding','Low voltage','ICFs','Stakeholders']},
+ {when:'July to Sep 2024',t:'Intern, Interface Management',o:'High Speed Rail Project · Siemens Mobility',
+  b:['Handled interface management across project lots: SIG, COM, TEL, TRW, CIV and DWE-Depot.','Coordinated internal teams and external stakeholders to keep the interface cycle on schedule.','Resolved design inputs, drawings, review comment sheets (RCS) and requests for information (RFI) in Aconex.'],tags:['Aconex','RFI','RCS','Coordination']},
+ {when:'Oct 2021 to June 2026',t:'BSc in Electrical Engineering',o:'Cairo University · USAID scholarship',
+  b:['Coursework: Data Structures and Algorithms, Programming Techniques, MATLAB, Differential Equations, Electrostatics and Magnetostatics, Modern Physics, Technical Writing and Presentation Skills.'],tags:['C++','MATLAB','Electromagnetics']}];
+const box=document.getElementById('routeBox'),fill=document.getElementById('fill');
+stops.forEach((s,i)=>{const d=document.createElement('div');d.className='stop'+(i==0?' on':'');
+ d.innerHTML=`<i class="dot"></i><button aria-expanded="${i==0}"><div class="when">${s.when}</div><div class="ttl">${s.t}${s.now?'<span class="new">Current</span>':''}</div><div class="org">${s.o}</div><div class="more"><div><ul>${s.b.map(x=>'<li>'+x+'</li>').join('')}</ul>${s.tags.map(x=>'<span class="tag">'+x+'</span>').join('')}</div></div></button>`;
+ d.querySelector('button').onclick=()=>{const on=!d.classList.contains('on');d.classList.toggle('on',on);d.querySelector('button').setAttribute('aria-expanded',on);setTimeout(prog,320)};
+ box.appendChild(d)});
+function prog(){const r=box.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.6-r.top)/r.height,0),1);fill.style.height=Math.max(0,(r.height-16)*p)+'px';
+ box.querySelectorAll('.stop').forEach(s=>{const dr=s.querySelector('.dot').getBoundingClientRect();if(dr.top<innerHeight*.6)s.classList.add('lit')});
+ box.querySelectorAll('.dot').forEach(d=>{const lit=d.getBoundingClientRect().top<innerHeight*.6;d.style.borderColor=lit?'var(--amber)':''})}
+addEventListener('scroll',prog,{passive:true});addEventListener('resize',prog);prog();
+
+// Skills
+const skills={Languages:['C++ (strongest)','Python (strong)','C','JavaScript','PHP','HTML','CSS'],Web:['React.js','Node.js','jQuery','Bootstrap'],Data:['SQL','MySQL'],Hardware:['Arduino','Quick field'],Engineering:['Interface management','Earthing and bonding','Aconex','Inventory analysis','Technical writing']};
+const tabs=document.getElementById('tabs'),chips=document.getElementById('chips');let cur='All';
+function renderSkills(){tabs.innerHTML='';['All',...Object.keys(skills)].forEach(k=>{const b=document.createElement('button');b.textContent=k;b.setAttribute('aria-pressed',k==cur);b.onclick=()=>{cur=k;renderSkills()};tabs.appendChild(b)});
+ chips.innerHTML='';Object.entries(skills).forEach(([k,v])=>v.forEach(s=>{const c=document.createElement('span');c.className='chip'+(cur!='All'&&cur!=k?' dim':'');c.textContent=s;chips.appendChild(c)}))}
+renderSkills();
+
+// Theme + copy
+const root=document.documentElement;
+document.getElementById('theme').onclick=()=>{const dark=getComputedStyle(root).getPropertyValue('--bg').trim()=='#0C1826';root.dataset.theme=dark?'light':'dark'};
+const toast=document.getElementById('toast');
+document.querySelectorAll('[data-copy]').forEach(a=>a.addEventListener('click',e=>{
+ try{navigator.clipboard.writeText(a.dataset.copy).then(()=>{toast.textContent='Copied '+a.dataset.copy;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)},()=>{})}catch(_){}}));
+</script>
+</body>
+</html>
